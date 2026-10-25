@@ -1,10 +1,10 @@
-# CafeFlow — Smart Restaurant & All-Day Bistro Management Platform
+CafeFlow — Smart Restaurant & All-Day Bistro Management Platform
 
 A production-grade, responsive restaurant & café web application built with **React 19 + TypeScript + Tailwind CSS**, **Express**, and **Gemini AI**.
 
 ---
 
-## 🍽️ Feature Overview
+🍽️ Feature Overview
 
 ### 1. Customer-Facing Features
 - **Hero & Story**: High-fidelity bistro photography, chef's specials, active promotions strip, verified reviews, and Google Maps embed.
