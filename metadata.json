@@ -1,0 +1,8 @@
+{
+  "name": "Remix CafeFlow - Smart Restaurant \u0026 Bistro Management",
+  "description": "Smart all-day bistro and restaurant management platform with digital QR menus, table reservations, AI taste discovery, WhatsApp checkout, and live admin operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

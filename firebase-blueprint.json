@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "Admin": {
+      "title": "Admin",
+      "description": "Authorized administrator record for CafeFlow",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Admin Google email address"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["admin"],
+          "description": "Administrator role"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when admin profile was recognized"
+        }
+      },
+      "required": ["email", "role"]
+    },
+    "MenuItem": {
+      "title": "MenuItem",
+      "description": "Bistro food or coffee menu item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "price": { "type": "number" },
+        "categoryId": { "type": "string" },
+        "isAvailable": { "type": "boolean" }
+      },
+      "required": ["id", "title", "price", "categoryId"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer dine-in, takeaway, or delivery order",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "orderNumber": { "type": "string" },
+        "total": { "type": "number" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "orderNumber", "total", "status"]
+    },
+    "Reservation": {
+      "title": "Reservation",
+      "description": "Guest table reservation request",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "guestName": { "type": "string" },
+        "date": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "guestName", "date", "status"]
+    }
+  },
+  "firestore": {
+    "/admins/{adminId}": {
+      "schema": "Admin",
+      "description": "Collection of cafe administrators"
+    },
+    "/menu/{itemId}": {
+      "schema": "MenuItem",
+      "description": "Bistro food and beverage items"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Customer dining orders"
+    },
+    "/reservations/{reservationId}": {
+      "schema": "Reservation",
+      "description": "Table reservation bookings"
+    }
+  }
+}

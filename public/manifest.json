@@ -1,0 +1,16 @@
+{
+  "name": "CafeFlow Restaurant & Bistro",
+  "short_name": "CafeFlow",
+  "description": "Smart all-day bistro and restaurant management platform with digital QR menus, table reservations, and live tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFDF9",
+  "theme_color": "#D9532F",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
